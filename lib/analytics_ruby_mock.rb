@@ -13,7 +13,7 @@ module AnalyticsRuby
     end
 
     def tracked_events
-      (@track_calls || []).collect { |t| t[:event] }
+      (@track_calls || [])#.collect { |t| t[:event] }
     end
 
     #############################################################
